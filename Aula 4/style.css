@@ -1,0 +1,133 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    margin: 0px;
+}
+
+.greenn{
+    width: 140px;
+    height: 140px;
+    padding-left: 40px;
+}
+
+.title1 {
+    color: white;
+    font-weight: bolder;
+    font-size: 7em;
+    margin-bottom: 0px;
+    margin-left: 20px;
+}
+
+.text1 {
+    margin-top: 0px;
+    color: white;
+    font-weight: normal;
+    font-size: 4em;
+    margin-left: 20px;
+}
+
+.text2 {
+    text-align: center;
+    display: block;
+    padding: 50px;
+    font-size: 3em;
+    color: white;
+    background-color: #8A7ED9;
+    margin: 0px;
+}
+
+.computer {
+    display: flex;
+    width: 700px;
+    height: 700px;
+}
+
+main {
+    background-image: linear-gradient(to right, #99A5D5, #A8BCDD, #B8D3E6);
+    margin: 0px;
+    display: flex;
+}
+
+main h1,
+p {
+    display: flex;
+}
+
+.baixo {
+    background-color: #8A7ED9;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: center;
+    justify-items: center;
+}
+
+.logo {
+    background-color: white;
+    width: 250px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    
+}
+
+.card {
+    height: 250px;
+    width: 250px;
+    display: flex;
+    border-top-right-radius: 50px;
+}
+
+
+button {
+    background-color: rgba(33, 36, 59, 0.5);
+    display: flex;
+    color: white;
+    text-decoration: none;
+    transition: .3s;
+    margin: auto;
+    padding: 20px;
+    font-size: 1.3em;
+    border-radius: 44px;
+    justify-items: center;
+}
+
+button:hover {
+    background-color: rgba(11, 12, 20, 0.5);
+    cursor: pointer;
+}
+
+.button-align {
+    display: grid;
+    place-items: center;
+    height: 220px;
+}
+
+.link {
+    text-decoration: none;
+    padding: 0px;
+}
+
+footer {
+    padding: 25px;
+    margin: auto;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .baixo{
+        grid-template-columns: 1fr;
+    }
+    main{
+        
+    }
+}
