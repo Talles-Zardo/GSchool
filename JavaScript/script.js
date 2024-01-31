@@ -1,10 +1,3 @@
-// let a, b, c;
-// a = +prompt("Digite um número:");
-// b = +prompt("Digite outro número:");
-
-// c = Math.max(a,b);
-// console.log(`O maior número é ${c}`);
-
 let a, b;
 b = 101;
 function random() {
@@ -51,6 +44,4 @@ function fatorial(params) {
         alert(`O Fatorial é igual a ${y}`);
         console.log(`O Fatorial é igual a ${y}`);
     }
-
-
 }
