@@ -1,6 +1,5 @@
 let c1, c2, c3;
 
-
 function run() {
     c1 = document.getElementById('nameInput').value;
     c2 = document.getElementById('phoneInput').value;
