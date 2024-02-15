@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefa II</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 3px;
+            margin: auto;
+            text-align: center;
+            margin-top: 5px;
+            border-radius: 12px;
+            font-size: 1em;
+        }
+
+        .container {
+            max-width: 720px;
+            min-width: 360px;
+            box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.20);
+        }
+    </style>
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <div class="container" style="border: 2px solid black">
+        <h2 style="font-size: 1.6em;">Preencha o formulário de cadastro abaixo</h2>
+        <div>
+            <p>Digite seu nome</p>
+            <input id="nameInput" placeholder="Nome..." type="text" required>
+            <p id="nameP"></p>
+        </div>
+        <div>
+            <p>Digite seu telefone</p>
+            <input id="phoneInput" placeholder="Telefone..." type="number" required>
+            <p id="phoneP"></p>
+        </div>
+        <div>
+            <p>Digite seu e-mail</p>
+            <input id="emailInput" placeholder="E-mail..." type="email" required>
+            <p id="emailP"></p>
+        </div>
+        <button style="padding: 3px 7px;" id="sendButton" onclick="run()">Enviar</button>
+        <p id="dataSent"></p>
+    </div>
+
+
+</body>
+
+
+</html>
+
+<!-- Tarefa de casa: Formulário!
+Desenvolvimento de um formulário com validações utilizando HTML, CSS e JavaScript. O uso do Bootstrap é facultativo. O formulário deve incluir campos para nome, e-mail e telefone, os quais precisam passar por validações para evitar deixá-los em branco. É necessário implementar mensagens de erro caso algum campo não seja preenchido corretamente, assim como uma mensagem de sucesso quando todos os campos estiverem preenchidos com valores válidos. -->
