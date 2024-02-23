@@ -17,23 +17,12 @@ let openModal = (
 let list = () => {
     fetch(url)
         .then((response) => response.json())
-        
         .then((data) => {
+            data.sort((a, b) => a.translations.por.common.localeCompare(b.translations.por.common));
             let row = document.querySelector('.row')
             let newHTML = ``
-            for (let i = 0; i < data.length; i++) {
-                //nome do pais: country.translations.por.common
-                //imagem do pais: country.flags.png
-                //descrição da imagem: country.flags.alt
-                //flag: country.flag
-                //região: country.region
-                //capital: country.capital
-                //area: country.area
-                //Lingua: country.languages
-                //população: country.population
-                //moeda: country.currencies
-                //continente: country.continents
 
+            for (let i = 0; i < data.length; i++) {
                 const country = data[i];
 
                 newHTML += ` 
@@ -42,10 +31,10 @@ let list = () => {
                 <div class="card-body">
                     <h5 class="card-title">${country.translations.por.common}</h5>
                     <p class="card-text">
-                    Região: ${country.region}
+                        Região: ${country.region}
                     </p>
-                 </div>
-                 </div>
+                </div>
+                </div>
                 `
             }
             row.innerHTML = newHTML;
