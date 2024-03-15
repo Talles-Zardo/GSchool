@@ -10,7 +10,7 @@ class ProductController extends Controller
     {
         $name = $request->input('name');
         $age = $request->input('age');
-        return "Meu nome é $name e eu tenho $age anos";
+        return "Meu nome é $name . ' e eu tenho $age anos";
     }
     //
 }

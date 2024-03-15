@@ -19,11 +19,11 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::group(['prefix' => '/product'], function () {
-    Route::post('/test', [ProductController::class, 'test']);
-    Route::get('/test/list', [ProductController::class, 'test']);
-    Route::put('/test/{id}', [ProductController::class, 'test']);
-    Route::delete('/test/{id}', [ProductController::class, 'test']);
+Route::controller(ProductController::class)->prefix('/product')->group(function () {
+    Route::post('/test', 'test');
+    Route::get('/test/list', 'test');
+    Route::put('/test/{id}', 'test');
+    Route::delete('/test/{id}', 'test');
 });
 
 //all() --> retorna todas as informações do request, independente do tipo.
