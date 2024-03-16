@@ -2,15 +2,48 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Product;
 use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
-    public function test(Request $request)
+    /**
+     * Display a listing of the resource.
+     */
+    public function index()
     {
-        $name = $request->input('name');
-        $age = $request->input('age');
-        return "Meu nome é $name . ' e eu tenho $age anos";
+        //
     }
-    //
+
+    /**
+     * Store a newly created resource in storage.
+     */
+    public function store(Request $request)
+    {
+        return Product::create($request -> input());
+    }
+
+    /**
+     * Display the specified resource.
+     */
+    public function show(Product $product)
+    {
+        //
+    }
+
+    /**
+     * Update the specified resource in storage.
+     */
+    public function update(Request $request, Product $product)
+    {
+        //
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     */
+    public function destroy(Product $product)
+    {
+        //
+    }
 }
